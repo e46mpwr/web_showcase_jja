@@ -141,6 +141,64 @@ export function init(Constants) {
                 loop: true,
             }
         },
+
+        {
+            card: {
+                // Video control stop
+                name: "Video control stop",
+                translation: [12, -0.9,10.16],
+                rotation: [0, -Math.PI / 2, 0],
+                scale: [0.5, 0.5, 0.5],
+                fullBright: true,
+                type: "2d",
+                muted: false,
+                textureType: "image",
+                textureLocation: "./assets/video_stop.png",
+                // Change the link below to link to your website
+                behaviorModules: [],
+                layers: ["pointer"],
+                loop: true,
+            }
+        },
+
+        {
+            card: {
+                // Video control play
+                name: "Video control play",
+                translation: [12, -0.9, 10.76],
+                rotation: [0, -Math.PI / 2, 0],
+                scale: [0.5, 0.5, 0.5],
+                fullBright: true,
+                type: "2d",
+                muted: false,
+                textureType: "image",
+                textureLocation: "./assets/video_play.png",
+                // Change the link below to link to your website
+                behaviorModules: [],
+                layers: ["pointer"],
+                loop: true,
+            }
+        },
+
+        {
+            card: {
+                // Video control pause
+                name: "Video control pause",
+                translation: [12, -0.9, 11.36],
+                rotation: [0, -Math.PI / 2, 0],
+                scale: [0.5, 0.5, 0.5],
+                fullBright: true,
+                type: "2d",
+                muted: false,
+                textureType: "image",
+                textureLocation: "./assets/video_pause.png",
+                // Change the link below to link to your website
+                behaviorModules: [],
+                layers: ["pointer"],
+                loop: true,
+            }
+        },
+
         {
             card: {
                 // Location 6 - Farthest spot on the right wall from where you enter
