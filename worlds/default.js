@@ -9,7 +9,7 @@ export function init(Constants) {
 
     Constants.UserBehaviorDirectory = "behaviors/default";
     Constants.UserBehaviorModules = [
-        "lights.js", "urlLink.js"
+        "lights.js", "urlLink.js", "video.js"
     ];
 
     const frameColor = 0x888888;
@@ -131,20 +131,17 @@ export function init(Constants) {
                 translation: [12, 0.60, 10.76],
                 rotation: [0, -Math.PI / 2, 0],
                 scale: [4, 4, 4],
+                fullBright: true,
                 type: "2d",
-                textureType: "image",
+                width: 1.778,
+                height: 1,
+                textureType: "video",
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CustomerVideo.mp4",
                 // Change the link below to link to your website
-                cardURL: "https://croquet.io",
-                cardHilite: 0xffffaa,
-                behaviorModules: ["URLLink"],
-                fullBright: true,
-                frameColor: 0xcccccc,
-                color: 0xbbbbbb,
-                cornerRadius: 0.05,
-                depth: 0.05,
-                shadow: true,
+                behaviorModules: ["VideoPlayer"],
+                layers: ["pointer"],
+                loop: true,
             }
         },
         {
