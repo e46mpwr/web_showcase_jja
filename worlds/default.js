@@ -90,10 +90,6 @@ export function init(Constants) {
                 textureType: "image",                
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CompanyLogo.jpg",
-                // Change the link below to link to your website
-                cardURL: "https://www.jjaventuresearch.com/",
-                cardHilite: 0xffffaa,
-                behaviorModules: ["URLLink"],
                 fullBright: true,
                 frameColor: 0xcccccc,
                 color: 0xbbbbbb,
@@ -157,9 +153,6 @@ export function init(Constants) {
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CustomerLogos.png",
                 // Change the link below to link to your website
-                cardURL: "https://www.jjaventuresearch.com/clients-placements/",
-                cardHilite: 0xffffaa,
-                behaviorModules: ["URLLink"],
                 fullBright: true,
                 frameColor: 0xcccccc,
                 color: 0xbbbbbb,
