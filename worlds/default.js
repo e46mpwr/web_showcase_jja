@@ -133,8 +133,9 @@ export function init(Constants) {
                 scale: [4, 4, 4],
                 fullBright: true,
                 type: "2d",
-                width: 1.778,
-                height: 1,
+                textureWidth: 1280,
+                textureHeight: 720,
+                muted: false,
                 textureType: "video",
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CustomerVideo.mp4",
