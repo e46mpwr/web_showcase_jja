@@ -22,7 +22,7 @@ export function init(Constants) {
                 type: "object",
                 // same position and orientation as in openPortal.js
                 translation: [-12, -0.4, -10.2],
-                rotation: [0, -Math.PI / 6, 0],
+                rotation: [0, -Math.PI*2/3, 0],
                 spawn: "default",
             }
         },
