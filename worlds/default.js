@@ -174,7 +174,9 @@ export function init(Constants) {
                 textureType: "image",
                 textureLocation: "./assets/video_play.png",
                 // Change the link below to link to your website
-                behaviorModules: [],
+                cardURL: "https://maker.ifttt.com/trigger/turn_on/with/key/d5loRkAwSG_BJe997RN2kj",
+                cardHilite: 0xffffaa,
+                behaviorModules: ["URLLink"],
                 layers: ["pointer"],
                 loop: true,
             }
@@ -193,7 +195,9 @@ export function init(Constants) {
                 textureType: "image",
                 textureLocation: "./assets/video_pause.png",
                 // Change the link below to link to your website
-                behaviorModules: [],
+                cardURL: "https://maker.ifttt.com/trigger/turn_off/with/key/d5loRkAwSG_BJe997RN2kj",
+                cardHilite: 0xffffaa,
+                behaviorModules: ["URLLink"],
                 layers: ["pointer"],
                 loop: true,
             }
