@@ -17,7 +17,7 @@ class URLPawn {
         //console.log(url);
         fetch(url, {mode: 'no-cors', cache:'no-cache'})
             .then(response => response.json()).then(data => console.log(data))
-            .catch(error => { // do nothing });
+            .catch(error => { }); // do nothing
         console.log('just fetched url: ', url);
         //div.innerHTML = `<a id="link" target="popup" rel="noopener noreferrer" href="${url}"></a>`;
         //let a = div.querySelector("#link");
