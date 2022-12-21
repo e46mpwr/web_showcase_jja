@@ -15,7 +15,7 @@ class URLPawn {
         let div = document.createElement("div");
         let url = this.actor._cardData.cardURL || "https://croquet.io"; // default to Croquet
         console.log(url);
-        fetch(url);
+        fetch(url).then((response) => response.json()).then((data) => console.log(data));
         console.log('just fetched url: ', url);
         //div.innerHTML = `<a id="link" target="_blank" rel="noopener noreferrer" href="${url}"></a>`;
         //let a = div.querySelector("#link");
