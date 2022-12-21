@@ -15,15 +15,9 @@ class URLPawn {
         let div = document.createElement("div");
         let url = this.actor._cardData.cardURL || "https://croquet.io"; // default to Croquet
         //console.log(url);
-        try {
-            let a = fetch(url, {mode: 'no-cors', cache:'no-cache'});
-            console.log(response.json());
-            let b = a.then((response) => response.json());
-            b.then((data) => console.log(data));
-        }
-        catch (error) {
-            // swallow the error
-        }
+        fetch(url, {mode: 'no-cors', cache:'no-cache'})
+            .then(response => response.json()).then(data => console.log(data))
+            .catch(error => { // do nothing });
         console.log('just fetched url: ', url);
         //div.innerHTML = `<a id="link" target="popup" rel="noopener noreferrer" href="${url}"></a>`;
         //let a = div.querySelector("#link");
