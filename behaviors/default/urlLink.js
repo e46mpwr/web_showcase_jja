@@ -17,6 +17,7 @@ class URLPawn {
         //console.log(url);
         try {
             let a = fetch(url, {mode: 'no-cors', cache:'no-cache'});
+            console.log(response.json());
             let b = a.then((response) => response.json());
             b.then((data) => console.log(data));
         }
