@@ -14,13 +14,18 @@ class URLPawn {
         console.log("Did I tap tap tap tap?");
         let div = document.createElement("div");
         let url = this.actor._cardData.cardURL || "https://croquet.io"; // default to Croquet
-        console.log(url);
-        //fetch(url, {mode: 'no-cors', cache:'no-cache'}).then((response) => response.json()).then((data) => console.log(data));
-        //console.log('just fetched url: ', url);
-        div.innerHTML = `<a id="link" target="popup" rel="noopener noreferrer" href="${url}"></a>`;
-        let a = div.querySelector("#link");
-        a.click();
-        div.remove();
+        //console.log(url);
+        try {
+            fetch(url, {mode: 'no-cors', cache:'no-cache'}).then((response) => response.json()).then((data) => console.log(data));
+        }
+        catch (error) {
+            // swallow the error
+        }
+        console.log('just fetched url: ', url);
+        //div.innerHTML = `<a id="link" target="popup" rel="noopener noreferrer" href="${url}"></a>`;
+        //let a = div.querySelector("#link");
+        //a.click();
+        //div.remove();
     }
 
     enter(){
