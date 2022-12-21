@@ -232,7 +232,7 @@ export function init(Constants) {
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CallToAction.png",
                 // Change the link below to link to your website
-                cardURL: "https://www.jjaventuresearch.com/#popup-start1",
+                cardURL: "https://maker.ifttt.com/trigger/turn_on/with/key/d5loRkAwSG_BJe997RN2kj",
                 cardHilite: 0xffffaa,
                 behaviorModules: ["URLLink"],
                 fullBright: true,
