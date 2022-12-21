@@ -15,12 +15,12 @@ class URLPawn {
         let div = document.createElement("div");
         let url = this.actor._cardData.cardURL || "https://croquet.io"; // default to Croquet
         console.log(url);
-        fetch(url, {mode: 'no-cors', cache:'no-cache'}).then((response) => response.json()).then((data) => console.log(data));
-        console.log('just fetched url: ', url);
-        //div.innerHTML = `<a id="link" target="_blank" rel="noopener noreferrer" href="${url}"></a>`;
-        //let a = div.querySelector("#link");
-        //a.click();
-        //div.remove();
+        //fetch(url, {mode: 'no-cors', cache:'no-cache'}).then((response) => response.json()).then((data) => console.log(data));
+        //console.log('just fetched url: ', url);
+        div.innerHTML = `<a id="link" target="popup" rel="noopener noreferrer" href="${url}"></a>`;
+        let a = div.querySelector("#link");
+        a.click();
+        div.remove();
     }
 
     enter(){
