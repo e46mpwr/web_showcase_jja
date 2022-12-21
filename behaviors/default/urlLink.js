@@ -16,7 +16,9 @@ class URLPawn {
         let url = this.actor._cardData.cardURL || "https://croquet.io"; // default to Croquet
         //console.log(url);
         try {
-            fetch(url, {mode: 'no-cors', cache:'no-cache'}).then((response) => response.json()).then((data) => console.log(data));
+            let a = fetch(url, {mode: 'no-cors', cache:'no-cache'});
+            let b = a.then((response) => response.json());
+            b.then((data) => console.log(data));
         }
         catch (error) {
             // swallow the error
