@@ -11,10 +11,9 @@ class URLPawn {
     }
 
     tap() {
-        console.log("Did I tap tap tap tap?");
+        //console.log("Did I tap tap tap tap?");
         let div = document.createElement("div");
         let url = this.actor._cardData.cardURL || "https://croquet.io"; // default to Croquet
-        //console.log(url);
         fetch(url, {mode: 'no-cors', cache:'no-cache'})
             .then(response => response.json()).then(data => console.log(data))
             .catch(error => { }); // do nothing
