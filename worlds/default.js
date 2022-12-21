@@ -131,14 +131,14 @@ export function init(Constants) {
                 type: "2d",
                 textureWidth: 1280,
                 textureHeight: 720,
-                muted: false,
+                muted: true,
                 textureType: "video",
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CustomerVideo.mp4",
                 // Change the link below to link to your website
                 behaviorModules: ["VideoPlayer"],
                 layers: ["pointer"],
-                loop: true,
+                loop: false,
             }
         },
 
