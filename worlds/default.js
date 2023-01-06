@@ -22,7 +22,7 @@ export function init(Constants) {
                 type: "object",
                 // same position and orientation as in openPortal.js
                 translation: [-12, -0.4, -10.2],
-                rotation: [0, -Math.PI / 2, 0],
+                rotation: [0, -Math.PI*2/3, 0],
                 spawn: "default",
             }
         },
@@ -131,14 +131,14 @@ export function init(Constants) {
                 type: "2d",
                 textureWidth: 1280,
                 textureHeight: 720,
-                muted: false,
+                muted: true,
                 textureType: "video",
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CustomerVideo.mp4",
                 // Change the link below to link to your website
                 behaviorModules: ["VideoPlayer"],
                 layers: ["pointer"],
-                loop: true,
+                loop: false,
             }
         },
 
@@ -174,7 +174,9 @@ export function init(Constants) {
                 textureType: "image",
                 textureLocation: "./assets/video_play.png",
                 // Change the link below to link to your website
-                behaviorModules: [],
+                cardURL: "https://maker.ifttt.com/trigger/turn_on/with/key/d5loRkAwSG_BJe997RN2kj",
+                cardHilite: 0xffffaa,
+                behaviorModules: ["URLLink"],
                 layers: ["pointer"],
                 loop: true,
             }
@@ -193,7 +195,9 @@ export function init(Constants) {
                 textureType: "image",
                 textureLocation: "./assets/video_pause.png",
                 // Change the link below to link to your website
-                behaviorModules: [],
+                cardURL: "https://maker.ifttt.com/trigger/turn_off/with/key/d5loRkAwSG_BJe997RN2kj",
+                cardHilite: 0xffffaa,
+                behaviorModules: ["URLLink"],
                 layers: ["pointer"],
                 loop: true,
             }
@@ -232,7 +236,7 @@ export function init(Constants) {
                 // Change the image with the image you want to show
                 textureLocation: "./myfiles/CallToAction.png",
                 // Change the link below to link to your website
-                cardURL: "https://www.jjaventuresearch.com/#popup-start1",
+                cardURL: "https://maker.ifttt.com/trigger/turn_on/with/key/d5loRkAwSG_BJe997RN2kj",
                 cardHilite: 0xffffaa,
                 behaviorModules: ["URLLink"],
                 fullBright: true,
